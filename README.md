@@ -78,4 +78,4 @@ Tags are used to filter and group tests accordingly.
 
 ## Reporting 
 View API tests Results on _**index.html**_ file inside folder _**playwright-report**_ folder
-View Mobile tests Results on _**undefined-master-report.html**_ file inside folder _**reports/html-reports/**_ folder
+View Mobile tests Results on _**master-report.html**_ file inside folder _**reports/html-reports/**_ folder
