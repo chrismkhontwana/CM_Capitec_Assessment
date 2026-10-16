@@ -74,7 +74,7 @@ wdio.conf.ts
 Tags are used to filter and group tests accordingly.
 
 - Execute mobile tests - `npx wdio run wdio.conf.ts`
-- Execute api tests - `npx playwright test -g '@api''`
+- Execute api tests - `npm run api-test`
 
 ## Reporting 
 View API tests Results on _**index.html**_ file inside folder _**playwright-report**_ folder
