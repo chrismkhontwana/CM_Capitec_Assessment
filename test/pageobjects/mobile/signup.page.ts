@@ -4,7 +4,7 @@ import { $ } from '@wdio/globals'
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class LandingPage  {
+class signupPage  {
     /**
      * define selectors using getter methods
      */
@@ -42,4 +42,4 @@ class LandingPage  {
    
 }
 
-export default new LandingPage();
+export default new signupPage();

@@ -7,11 +7,11 @@ class CommonPage {
      * define selectors using getter methods
      */
 
-    public get txtArlertTitle () {
+    public get txtAlertTitle () {
         return $('//android.widget.TextView[@resource-id="com.wdiodemoapp:id/alert_title"]');
     }
 
-    public get txtArlertMessage () {
+    public get txtAlertMessage () {
         return $('//android.widget.TextView[@resource-id="android:id/message"]');
     }  	
     
@@ -19,7 +19,7 @@ class CommonPage {
         return $('//android.widget.TextView[@text="Please enter at least 8 characters"]');
     }  
     
-    public get btnArlertOk () {
+    public get btnAlertOk () {
         return $('//android.widget.Button[@resource-id="android:id/button1"]');
     }  
 }

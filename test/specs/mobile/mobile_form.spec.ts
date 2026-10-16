@@ -28,10 +28,10 @@ describe('Fill Form', () => {
 
         await formPage.btnActive.click();   
 
-        await commonPage.txtArlertTitle.waitForDisplayed();
-        await expect(commonPage.txtArlertTitle).toHaveText(
+        await commonPage.txtAlertTitle.waitForDisplayed();
+        await expect(commonPage.txtAlertTitle).toHaveText(
             expect.stringContaining('This button is'))
-        await expect(commonPage.txtArlertMessage).toHaveText(
+        await expect(commonPage.txtAlertMessage).toHaveText(
             expect.stringContaining('This button is active'))
 
     })

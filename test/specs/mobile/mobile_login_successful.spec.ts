@@ -13,10 +13,10 @@ describe('Login with valid', () => {
         await LoginPage.login('chris@valid.com','v@lidpassword');
         await LoginPage.btnLogin.click();
 
-        await commonPage.txtArlertTitle.waitForDisplayed();
-        await expect(commonPage.txtArlertTitle).toHaveText(
+        await commonPage.txtAlertTitle.waitForDisplayed();
+        await expect(commonPage.txtAlertTitle).toHaveText(
             expect.stringContaining('Success'))
-        await expect(commonPage.txtArlertMessage).toHaveText(
+        await expect(commonPage.txtAlertMessage).toHaveText(
             expect.stringContaining('You are logged in!'))
     })
 })

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.ts"
+    "mobile-test": "wdio run ./wdio.conf.ts",
+    "api-test": "playwright test"
   },
   "keywords": [],
   "type": "commonjs",

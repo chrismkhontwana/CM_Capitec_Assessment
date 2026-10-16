@@ -66,8 +66,9 @@ wdio.conf.ts
 
 ## Android APK Testing with WebdriverIO and Appium
 
-1. Place your APK in the app/ directory.
-2. update capabilities with device info and apk path in the wdio.conf.ts 
+1. Download APK from https://github.com/webdriverio/native-demo-app/releases
+2. Place your APK in the app/ directory.
+3. update capabilities with device info and apk path in the wdio.conf.ts 
 
 ## Running Tests
 Tags are used to filter and group tests accordingly.

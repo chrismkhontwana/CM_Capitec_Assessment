@@ -14,10 +14,10 @@ describe('Sign Up', () => {
         await signUp.signUp('chris@signup.com','v@lidpassword','v@lidpassword');
         await signUp.btnSignUp.click();
 
-        await commonPage.txtArlertTitle.waitForDisplayed();
-        await expect(commonPage.txtArlertTitle).toHaveText(
+        await commonPage.txtAlertTitle.waitForDisplayed();
+        await expect(commonPage.txtAlertTitle).toHaveText(
             expect.stringContaining('Signed Up!'))
-        await expect(commonPage.txtArlertMessage).toHaveText(
+        await expect(commonPage.txtAlertMessage).toHaveText(
             expect.stringContaining('You successfully signed up!'))
     })
 })
