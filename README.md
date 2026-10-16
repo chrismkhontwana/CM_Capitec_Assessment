@@ -77,5 +77,6 @@ Tags are used to filter and group tests accordingly.
 - Execute api tests - `npm run api-test`
 
 ## Reporting 
-View API tests Results on _**index.html**_ file inside folder _**playwright-report**_ folder
-View Mobile tests Results on _**master-report.html**_ file inside folder _**reports/html-reports/**_ folder
+1. View API tests Results on _**index.html**_ file inside folder _**playwright-report**_ folder
+
+2. View Mobile tests Results on _**master-report.html**_ file inside folder _**reports/html-reports/**_ folder
