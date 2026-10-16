@@ -106,7 +106,7 @@ export const config: WebdriverIO.Config = {
     // baseUrl: 'http://localhost:8080',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 60000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -133,7 +133,10 @@ export const config: WebdriverIO.Config = {
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
     framework: 'mocha',
-    
+    mochaOpts:
+    {
+       timeout: 600000
+    },
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -186,9 +189,9 @@ export const config: WebdriverIO.Config = {
         reportAggregator = new ReportAggregator(
             {
                 outputDir: './reports/html-reports/',
-                filename: process.env.TEST_BROWSER + '-master-report.html',
-                reportTitle: 'Micro-Magic Web Test Report',
-                browserName: process.env.TEST_BROWSER ? process.env.TEST_BROWSER : 'unspecified',
+                filename: 'master-report.html',
+                reportTitle: 'Moblie Test Report',
+                browserName: 'Mobile',
                 showInBrowser: true
             });
 
@@ -284,12 +287,9 @@ export const config: WebdriverIO.Config = {
     // },
        afterTest: function (test: any, context: any, result: any) {
         // if test passed, ignore, else take and save screenshot.
-        if (result.passed)
-        {
-            return;
-        }
-        //@ts-ignore
-          driver.logScreenshot(String.format("Test Ended in {0}", result.error.stack));
+    
+        browser.saveScreenshot("./reports/html-reports/screenshots/" + test.title + ".png");
+        //   driver.logScreenshot(String.format("Test Ended in {0}", result.error.stack));
        },
 
     /**

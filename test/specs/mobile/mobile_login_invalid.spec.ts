@@ -3,7 +3,7 @@ import LoginPage from '../../pageobjects/mobile/login.page'
 import LandingPage from '../../pageobjects/mobile/landing.page'
 import commonPage from '../../pageobjects/mobile/common.page'
 
-describe('Login with invalid', () => {
+describe('Login with invalid password', () => {
 
         it('Login with invalid credentials', async () => {
         await LandingPage.btnLogin.click();

@@ -9,6 +9,16 @@ class SwipePage  {
      * define selectors using getter methods
      */
 
+    public get textGitHub () {
+        return $('//android.widget.TextView[@text="FULLY OPEN SOURCE"]');
+    }
+
+    public get textChat () {
+        return $('//android.widget.TextView[@text="GREAT COMMUNITY"]');
+    }
+
+    	
+
 // Investigating why are we getting the error "Property 'swipe' does not exist on type 'Browser'."
     public async mySwipe (myDirection: string) {
         await browser.swipe({

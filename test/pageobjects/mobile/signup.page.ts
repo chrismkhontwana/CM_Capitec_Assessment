@@ -37,7 +37,6 @@ class signupPage  {
         await this.inputEmail.setValue(username);
         await this.inputPassword.setValue(password);
         await this.inputConfirmPassword.setValue(confirmPassword);
-        await this.btnSignUp.click();
     }
    
 }
