@@ -14,27 +14,27 @@ A TypeScript-based test automation framework combining WebdriverIO, Appium, and 
 
 ## Project Structure
 
-data
-app
-test - pageObject - api  - apiBookingObjects.ts
-                  - mobile - common.page.ts
-				           - form.page.ts
-						   - landing.page.ts
-						   - login.page.ts
-						   - signup.page.ts
-						   - swipe.page.ts
-     - specs - api    - api_test.spec.ts
+1. -data
+2. -app
+3. -test - pageObject - api  - apiBookingObjects.ts
+4.                    - mobile - common.page.ts
+5.     				           - form.page.ts
+6. 						       - landing.page.ts
+7. 						       - login.page.ts
+8. 						       - signup.page.ts
+9. 						       - swipe.page.ts
+10.      - specs - api    - api_test.spec.ts
              - mobile -	mobile_form.spec.ts
 			          - mobile_login_invalid.spec.ts
 					  - mobile_login_successful.spec.ts
 					  - mobile_signup.spec.ts
 					  - mobile_swipe.spec.ts
-.env
-package-lock.json
-packege.json
-Playwright.config.ts
-tsconfig.json
-wdio.conf.ts
+11. -.env
+12. -package-lock.json
+13. -packege.json
+14. -Playwright.config.ts
+15. -tsconfig.json
+16. -wdio.conf.ts
 
 ## Prerequisites
 
