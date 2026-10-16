@@ -1,0 +1,35 @@
+{
+  "name": "capitecassessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.ts"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@testing-library/webdriverio": "^3.2.1",
+    "@types/node": "^26.6.5",
+    "@wdio/appium-service": "^10.0.2",
+    "@wdio/cli": "^10.0.2",
+    "@wdio/globals": "^10.0.2",
+    "@wdio/json-reporter": "^10.0.1",
+    "@wdio/junit-reporter": "^10.0.1",
+    "@wdio/local-runner": "^10.0.2",
+    "@wdio/mocha-framework": "^10.0.1",
+    "@wdio/spec-reporter": "^10.0.1",
+    "@wdio/visual-service": "^10.2.1",
+    "appium-uiautomator2-driver": "^8.7.0",
+    "expect-webdriverio": "^8.0.0",
+    "wdio-json-html-reporter": "^1.5.14",
+    "wdio-wait-for": "^3.1.1",
+    "webdriverio": "^10.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "wdio-html-nice-reporter": "^8.1.7",
+    "wdio-video-reporter": "^6.2.0"
+  }
+}
