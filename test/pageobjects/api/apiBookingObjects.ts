@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
 
-export class BookingAPI{
+export class apiBookingObjects{
     page: Page;
     baseApi: any;
 
