@@ -199,11 +199,7 @@ export const config: WebdriverIO.Config = {
     },
 
 
-    onComplete: function (exitCode, config, capabilities, results) {
-    (async () => {
-        await reportAggregator.createReport();
-        })();
-    },
+
     /**
      * Gets executed before a worker process is spawned and can be used to initialize specific service
      * for that worker as well as modify runtime environments in an async fashion.
@@ -332,8 +328,11 @@ export const config: WebdriverIO.Config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    // onComplete: function(exitCode, config, capabilities, results) {
-    // },
+    onComplete: function (exitCode, config, capabilities, results) {
+    (async () => {
+        await reportAggregator.createReport();
+        })();
+    },
     /**
     * Gets executed when a refresh happens.
     * @param {string} oldSessionId session ID of the old session
