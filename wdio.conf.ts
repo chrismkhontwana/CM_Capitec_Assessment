@@ -281,13 +281,16 @@ export const config: WebdriverIO.Config = {
      */
     // afterTest: function(test, context, { error, result, duration, passed, retries }) {
     // },
-       afterTest: function (test: any, context: any, result: any) {
-        // if test passed, ignore, else take and save screenshot.
-    
-        browser.saveScreenshot("./reports/html-reports/screenshots/" + test.title + ".png");
-        //   driver.logScreenshot(String.format("Test Ended in {0}", result.error.stack));
-       },
 
+     afterTest: function (test: any, context: any, result: any) {
+        // if test passed, ignore, else take and save screenshot.
+       const timestamp = new Date()
+            .toISOString()
+            .replace(/T/, '_')
+            .replace(/:/g, '-')
+            .replace(/\..+/, '');
+        browser.saveScreenshot("./reports/html-reports/screenshots/" + test.title+"_"+timestamp + ".png");
+       },
     /**
      * Hook that gets executed after the suite has ended
      * @param {object} suite suite details
